@@ -1,0 +1,295 @@
+{
+	"info": {
+		"_postman_id": "e0d44ebe-b894-4ecb-b3d2-1b9dde9bd20a",
+		"name": "Accuknox Social Media",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "25840670",
+		"_collection_link": "https://uchiha.postman.co/workspace/New-Team-Workspace~99a98696-1589-4b3a-bd0b-fc91c3a97052/collection/25840670-e0d44ebe-b894-4ecb-b3d2-1b9dde9bd20a?action=share&source=collection_link&creator=25840670"
+	},
+	"item": [
+		{
+			"name": "Sign Up API",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"email\" : \"psd@gif.com\",\r\n    \"password\" : \"psd9\",\r\n    \"name\" : \"prasannaD\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://0.0.0.0:8000/api/login-api/sign-up/",
+					"protocol": "http",
+					"host": [
+						"0",
+						"0",
+						"0",
+						"0"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"login-api",
+						"sign-up",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Log In API",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"email\" : \"psd@gif.com\",\r\n    \"password\" : \"psd9\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://0.0.0.0:8000/api/login-api/login/",
+					"protocol": "http",
+					"host": [
+						"0",
+						"0",
+						"0",
+						"0"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"login-api",
+						"login",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Search User API",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Token 71717712646e161b0ad6258e778e984c6ae16867"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"keyword\" : \"pra\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8000/api/relations/search-user/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"relations",
+						"search-user",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Send Request",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Token 9381f20a593a865ccb792e2f4a14d568ffc83857"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"recipient_email\":\"newuser@gif.com\",\r\n    \"sender_email\":\"chitra@gif.com\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8000/api/relations/send-request/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"relations",
+						"send-request",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Accept Request",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Token 24cb3dc71005eafdd903612aba6c359e830debe2"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"owners_email\":\"newuser@gif.com\",\r\n    \"acceptance_email\":\"chitra@gif.com\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8000/api/relations/accept-request/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"relations",
+						"accept-request",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete Request",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Token 24cb3dc71005eafdd903612aba6c359e830debe2"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"owners_email\":\"newuser@gif.com\",\r\n    \"email_to_delete\":\"chitra@gif.com\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8000/api/relations/delete-request/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"relations",
+						"delete-request",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Friends List",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Token 24cb3dc71005eafdd903612aba6c359e830debe2"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"owners_email\" : \"newuser@gif.com\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8000/api/relations/friend-list/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"relations",
+						"friend-list",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Pending Request List",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Token 24cb3dc71005eafdd903612aba6c359e830debe2"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"owners_email\":\"newuser@gif.com\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8000/api/relations/pending-list/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"relations",
+						"pending-list",
+						""
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
