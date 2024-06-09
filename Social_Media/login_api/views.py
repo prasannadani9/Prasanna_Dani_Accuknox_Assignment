@@ -13,7 +13,7 @@ class LoginAPI(APIView):
     def post(self, request):
         data = request.data
         try:
-            email = data.get('email')
+            email = data.get('email').lower()
             password = data.get('password')
             error_check, error_msg = helper.check_for_error_login_api(data)
             if error_check:
@@ -34,7 +34,7 @@ class SignupAPI(APIView):
         data = request.data
         try: 
             name = data.get('name', '')
-            email = data.get('email','')
+            email = data.get('email','').lower()
             password = data.get('password','')
             error_check, error_msg = helper.check_for_error_signup_api(data)
             if error_check:
