@@ -24,7 +24,8 @@ Installation Instructions
 
 1) Clone the repository to your local machine.
 
-•	git clone <repository_url>
+•	git clone https://github.com/prasannadani9/Prasanna_Dani_Accuknox_Assignment.git
+* git checkout master
 •	cd Accuknox_Social_Media/Accuknox Social Media
 
 2) Check whether the Environment Variables are set correctly according to your current computer setup. (docker-compose.yml)
